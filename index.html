@@ -2,10 +2,69 @@
 <html>
 <head>
 <title></title>
+<script>
+function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+</script>
 <style type="text/css">
-body {
-	background-color:rgb(100,250,0);
-	overflow:hidden;
+*{
+text-transform:capitalize;
+}
+table{
+	width:100%;
+	text-align:center;
+}
+.green{
+	color: white;
+	background-color: green;
+	padding-top: 10px;
+	padding-right: 8px;
+	padding-bottom: 10px;
+	padding-left: 7px;
+	border-collapse:collapse;
+}
+.black{
+	color:white;
+	background-color: black;
+	padding-top: 10px;
+	padding-right: 8px;
+	padding-bottom: 10px;
+	padding-left: 7px;
+	border-collapse: collapse;
+}
+.line{
+	text-align:center;
+	color:green;
+	line-height:0.5;
+	font:cursive;
+}
+span{ 
+	text-align:center;
+	color:#e0ac1c;
+	line-height:0.5;
+	font:cursive;
+}
+.Pre{
+	color: white;
+	background-color:orange;
+	text-decoration:none;
+	display:inline-block;
+	padding: 20px 18px 20px 15px;
+	margin-top:1pc;
+}
+.next{
+color: white;
+background-color:orange;
+text-decoration:none;
+display:inline-block;
+padding: 20px 28px 20px 29px;
+margin-top:1pc;
+float:right;
 }
 .navbar {
 	background-color:green;
@@ -29,74 +88,6 @@ body {
 	color:White;
 		background-color:black;
 	}
-#button-1{
-	background-color:blue;
-	color:white;
-	text-decoration:none;
-	padding:20px 12px 21px 10px;
-	display:inline-block;
-	margin-top:5%;
-	margin-right:35%;
-	margin-bottom:10%;
-	margin-left:1%;
-	float:right;
-	border-color:black;
-	border-style:solid;
-	border-width:medium;
-}
-#button-2{
-background-color:red;
-color:white;
-text-decoration:none;
-padding:20px 12px 21px 10px;
-display:inline-block;
-margin-top:5%;
-margin-right:35%;
-margin-bottom:10%;
-margin-left:1%;
-float:right;
-border-color:black;
-border-style:solid;
-border-width:medium;
-}
-#button-3{
-background-color:blue;
-	color:white;
-	text-decoration:none;
-	padding:20px 35px 21px 40px;
-	display:inline-block;
-	margin-top:7%;
-	margin-right:35%;
-	margin-bottom:10%;
-	margin-left:1%;
-	float:right;
-	border-color:black;
-	border-style:solid;
-	border-width:medium;
-}
-#button-4{
-background-color:red;
-color:white;
-text-decoration:none;
-padding:20px 30px 21px 25px;
-display:inline-block;
-margin-top:7%;
-margin-right:35%;
-margin-bottom:10%;
-margin-left:0%;
-float:right;
-border-color:black;
-border-style:solid;
-border-width:medium;
-}
-#Heading-home{
-	text-align:center;
-	font-size:40px;
-	font-weight:bolder;
-	display:inline-block;
-	margin-left:22%;
-	
-}
 .overlay {
 height: 100%;
 width: 0;
@@ -151,7 +142,7 @@ right: 35px;
 			<li><a href="https://hmuneer.github.io/Home-table/">Home</li></a>
 			<li><a href="https://hmuneer.github.io/table.1.1/">Table</li></a>
 			<li><a href="https://hmuneer.github.io/list-of-tables/">Table List 1</a></li>
-						<li><a href="https://hmuneer.github.io/list-of-tables2/">Table List 2</a></li>
+			<li><a href="https://hmuneer.github.io/list-of-tables2/">Table List 2</a></li>
 		</ul>
 	</nav>
 </header>
@@ -195,25 +186,85 @@ right: 35px;
 </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
-<span id="Heading-home">
-<p>Home</p>
-</span>
+<div class="line">
+<h2>Table of <h2>
+<span>1</span>
+</div>
+<table>
+	<tr>
+		<td class="black">1</td>
+		<td class="green">×</td>
+		<td class="black">1</td>
+		<td class="green">=</td>
+		<td class="black">1</td>
+	</tr>
+	<tr>
+		<td class="black">1</td>
+		<td class="green">×</td>
+		<td class="black">2</td>
+		<td class="green">=</td>
+		<td class="black">2</td>
+	</tr>
+	<tr>
+		<td class="black">1</td>
+		<td class="green">×</td>
+		<td class="black">3</td>
+		<td class="green">=</td>
+		<td class="black">3</td>
+	</tr>
+	<tr>
+		<td class="black">1</td>
+		<td class="green">×</td>
+		<td class="black">4</td>
+		<td class="green">=</td>
+		<td class="black">4</td>
+	</tr>
+	<tr>
+		<td class="black">1</td>
+		<td class="green">×</td>
+		<td class="black">5</td>
+		<td class="green">=</td>
+		<td class="black">5</td>
+	</tr>
+	<tr>
+		<td class="black">1</td>
+		<td class="green">×</td>
+		<td class="black">6</td>
+		<td class="green">=</td>
+		<td class="black">6</td>
+	</tr>
+	<tr>
+		<td class="black">1</td>
+		<td class="green">×</td>
+		<td class="black">7</td>
+		<td class="green">=</td>
+		<td class="black">7</td>
+	</tr>
+	<tr>
+		<td class="black">1</td>
+		<td class="green">×</td>
+		<td class="black">8</td>
+		<td class="green">=</td>
+		<td class="black">8</td>
+	</tr>
+	<tr>
+		<td class="black">1</td>
+		<td class="green">×</td>
+		<td class="black">9</td>
+		<td class="green">=</td>
+		<td class="black">9</td>
+	</tr>
+	<tr>
+		<td class="black">1</td>
+		<td class="green">×</td>
+		<td class="black">10</td>
+		<td class="green">=</td>
+		<td class="black">10</td>
+	</tr>
+</table>
+<a class="Pre" href="https://hmuneer.github.io/table-20">Previous</a>
 
-<a id="button-1" href="https://hmuneer.github.io/list-of-tables/" >List Of table 1</a>
 
-<a id="button-2" href="https://hmuneer.github.io/list-of-tables2/" >List of table 2</a>
-
-<a id="button-3" href="https://hmuneer.github.io/table.1.1/" >Tables</a>
-
-<a id="button-4" href="https://www.facebook.com/profile.php?id=100027925870102" >Live Chat</a>
-<script>
-function openNav() {
-document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-document.getElementById("myNav").style.width = "0%";
-}
-</script>
+<a class="next" href="https://hmuneer.github.io/table-2/">Next</a>
 </body>
 </html>
